@@ -1,7 +1,7 @@
-# containers
+# Containers
 You have already used a vector and a list, but there are also a number of other containers that you can use.  In this learning activity, you will experiment with several of these and compare their performance.
 
-## vectors
+## Vectors
 Lets get started with a little benchmark program that should drive vectors wild.  Lets try repeatedly inserting at the front of the vector.  Notice that insert takes an iterator as the first parameter, and we can pass it the begin() function to insert at the beginning of the vector.  
 ```c++
     vector<string> mystrings;
@@ -19,6 +19,7 @@ Get this code running and measure how long it takes to execute.  On my cloud9 wi
 ```
 This loop took 0.004 seconds or in other words, it ran almost 1600 times faster.  So, picking the right data structure for your application can make a big difference.
 
+## Linked Lists
 Lets try the same thing with linked lists.
 ```c++
     list<string> mystrings;
@@ -50,6 +51,7 @@ Now lets look at accessing a item out of the middle of a list.  The code is almo
         value = *middle;
     }
 ```
+## Stacks
 You havent used a stack before, but lets look at how we would use a stack.  The only operations on a stack are push and pop, but 4,000,000 pushes took 0.44 seconds on my Cloud9, so it appears that the stack is faster than a vector, but slower than a list.  You will need to use a stack for lab #3.
 ```c++
     stack<string> mystrings;
