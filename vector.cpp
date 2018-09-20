@@ -27,7 +27,7 @@ int main()
     }
     newtime = clock();
     seconds = (double)(newtime-oldtime)/CLOCKS_PER_SEC;
-    cout << "vector inserts begin took "<<seconds<<endl;
+    cout << "vector inserts end took "<<seconds<<endl;
     
     // Now retrieve from the middle
     oldtime = clock(); 
@@ -39,7 +39,7 @@ int main()
     }
     newtime = clock();
     seconds = (double)(newtime-oldtime)/CLOCKS_PER_SEC;
-    cout << "vector middle gets begin took "<<seconds<<endl;
+    cout << "vector get from middle took "<<seconds<<endl;
     
 }
 

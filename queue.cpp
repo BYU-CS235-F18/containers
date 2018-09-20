@@ -1,11 +1,11 @@
 #include <iostream>
-#include <stack>
+#include <queue>
 #include <string>
 #include <ctime>
 using namespace std;
 int main()
 {
-    stack<string> mystrings;
+    queue<string> mystrings;
     int n = 4000000; // The number of inserts
     clock_t oldtime, newtime;
     double seconds;
@@ -17,7 +17,7 @@ int main()
     }
     newtime = clock();
     seconds = (double)(newtime-oldtime)/CLOCKS_PER_SEC;
-    cout << "stack pushes took "<<seconds<<endl;
+    cout << "queue pushes took "<<seconds<<endl;
 
    // Pop them all
     oldtime = clock(); 
@@ -26,5 +26,5 @@ int main()
     }
     newtime = clock();
     seconds = (double)(newtime-oldtime)/CLOCKS_PER_SEC;
-    cout << "stack pops took "<<seconds<<endl;
+    cout << "queue pops took "<<seconds<<endl;
 }
