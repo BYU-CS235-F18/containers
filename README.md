@@ -71,3 +71,30 @@ Let's look at how we would use a queue. The only operations on a queue are push 
 
 ## Deques
 Remember that deques are actually more like vectors than queues. The main difference is that vectors use a single array to store everything and deques have the ability to chain multiple arrays together to store everything. So we should expect inserting in the front to be faster for a deque than a vector, but probably still not as fast as a linked list. We would expect getting from the middle to be faster for a deque than a linked list, but proably not quite as fast as a vector.
+```bash
+vector inserts begin took 5.80443
+vector inserts end took 0.004
+vector get from middle took 0.835413
+```
+
+```bash
+list inserts begin took 0.007479
+list inserts end took 0.003962
+list get from middle took 5.16057
+```
+
+```bash
+stack pushes took 0.622548
+stack pops took 0.189525
+```
+
+```bash
+queue pushes took 0.475159
+queue pops took 0.131497
+```
+
+```bash
+deque inserts begin took 0.00576
+deque inserts end took 0.003554
+deque get from middle took 3.3545
+```
